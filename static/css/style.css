@@ -1,0 +1,113 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #d9b38c, #f5e1c8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3e2c1c;
+}
+
+/* Card Styling */
+.card {
+  background: #fffaf2;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(62, 44, 28, 0.3);
+  width: 70%;
+  max-width: 900px;
+  padding: 30px 40px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(62, 44, 28, 0.4);
+}
+
+/* Header */
+.card-header h1 {
+  color: #3e2c1c;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(150, 100, 50, 0.3);
+  letter-spacing: 1px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #4b2e05;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Select and Input Fields */
+select, input {
+  width: 80%;
+  padding: 10px 12px;
+  border: 1px solid #b08a64;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s;
+  background-color: #fff7ed;
+}
+
+select:focus, input:focus {
+  border-color: #8b5e34;
+  box-shadow: 0 0 8px rgba(139, 94, 52, 0.4);
+}
+
+/* Button */
+button {
+  background-color: #8b5e34;
+  color: #fffaf2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a97447;
+  transform: scale(1.05);
+}
+
+/* Prediction Text */
+#prediction {
+  color: #3e2c1c;
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: #fff2e0;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 15px;
+  box-shadow: 0 3px 6px rgba(62, 44, 28, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .card-header h1 {
+    font-size: 1.5rem;
+  }
+
+  select, input {
+    width: 100%;
+  }
+}
